@@ -14,8 +14,7 @@ class OrderModelForm(BootStrapModelForm):
         model = models.Order
         # fields = "__all__"
         # fields = [""]
-        # exclude = ["oid", 'admin']
-        exclude = ["oid"]
+        exclude = ["oid", 'admin']
 
 
 def order_list(request):
